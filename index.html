@@ -5,48 +5,121 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>sweetbot</title>
 	<link rel="stylesheet" href="styles.css" type="text/css">
+	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script>
+    $(function() {
+     
+        $("#slideshow > div:gt(0)").hide();
+ 
+        setInterval(function() { 
+          $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+        },  3000);
+         
+    });
+</script>
 </head>
 	
 	
 <body>
 <header>
-	<nav id="navigation">
+	<nav class="navigation">
 		
-		<a href="#" id="header-a">Services</a>
-		<a href="#" id="header-a">Projekter</a>
-		<a href="#" id="header-a">Om</a>
-		<a href="#" id="header-a">Kontakt</a>
-		<a href="#" id="header-a">Søg</a>
-	</nav>
+		<a href="#" id="header-a">Home</a>
+		<a href="#Services" id="header-b">Services</a>
+		<a href="#Projekter" id="header-c">Projekter</a>
+		<a href="#Om os" id="header-d">Om os</a>
+		<a href="#Kontakt" id="header-e">Kontakt</a>
+	
+	
+	<form class ="search-form">
+	<input type ="text" placeholder ="Search">
+		<button>Søg</button>
+	
+	</form>
+		
+		</nav>
 	</header>
 
 	
+	<div id="slideshow">
+		<div><img src="img/billede1.jpeg" alt="" /></div>
+		<div><img src="img/photo-homepage3.jpg" alt="" /></div>
+		<div><img src="img/photo-homepage.jpg" alt="" /></div>
+		<div><img src="img/hotbot_logo.jpg" alt="" /></div>
+
+		
 	
-	<div class="firstpic">
-	<div class="sweetbot-txt">
+		
+		
+</div>
+	
+	
+	
+	
+	<!--<div class="firstpic">
+	<!-- <div class="sweetbot-txt">
 		<span class="border">
 		Sweetbot.Design
-		</span>
+		</span> 
 		</div>
-	</div>
-	
-	
-	<div id="container">
-		
-	<section class="projekter">
-	<h2>Projekter</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque deleniti quibusdam repellat sint laudantium, velit officia obcaecati consequuntur laborum recusandae consequatur saepe ea corporis praesentium unde aliquid aliquam vitae adipisci, rerum cupiditate dolorum? Impedit provident cupiditate iusto, neque repudiandae modi quidem rem asperiores culpa atque assumenda quasi velit quibusdam aspernatur lorem20</p>
-			</section>
-		</div>
-	
-	<div class="photos">
-	<img src="img/pexels-photo-196645.jpeg">
-	<img src="img/security-protection-anti-virus-software-60504.jpeg">
-	<img src="img/pexels-photo-196645.jpeg">
-	<img src="img/pexels-photo-196645.jpeg">
-	<img src="img/security-protection-anti-virus-software-60504.jpeg">
-	</div>
-	
+	</div>-->
 
+	
+	<div class="container">
+		<div class="Services"> <section id="Services">Services</section> </div>
+		<img src="img/photo-kontak-os.jpg" alt="programmer" class="billede1">
+		<img src="img/security-protection-anti-virus-software-60504.jpeg" alt="security" class="billede1">
+		<img src="img/hotbot_logo.jpg" alt="hotbot logo" class="billede1">
+	</div>
+	<div class="container">
+		<div class="Projekter"> <section id="Projekter">Projekter</section>  </div>
+	</div>
+	<div class="container">
+		<div class="Om-os"> <section id="Om os">Om os</section>  </div>
+	</div>
+	
+	
+	
+	
+	
+	<!-- kontakt section -->
+	<div class="container">
+		<div class="Kontakt"> <section id="Kontakt">Kontakt</section>  </div>
+		<div class="contact-form">
+  <form action="mailto:Madr1402@hotmail.com" method="post" enctype="text/plain">
+    <div class="txtb">
+      <label>Full Name:</label>
+      <input type="text" name="name" placeholder="Enter Your Name" autofocus required>
+    </div>
+    <div class="txtb">
+      <label>Email:</label>
+      <input type="email" name="email" placeholder="Enter Your Email" autofocus required>
+    </div>
+    <div class="txtb">
+      <label>Phone Number:</label>
+      <input type="text" name="phonenumber" placeholder="Enter Your Phone Number" autofocus required>
+    </div>
+    <div class="txtb">
+      <label>Message:</label>
+      <textarea name="comment" placeholder="Type your message here"></textarea>
+    </div>
+    <div class="submit">
+      <input type="submit" value="Send">
+    </div>
+  </form>
+</div>
+	</div>
+	
+	
+	
+	
+<!-- contact form -->
+	
 </body>
 </html>

@@ -3,51 +3,114 @@
 
 body, html {
 	height: 100%;
-	margin: 0;
+	margin: 0px;
 	font-size: 16px;
 	font-family: "lato", sans-serif;
 	font-weight: 400;
 	border:0px;
 }
-
-#navigation {
+/* navigations baren i toppen */
+.navigation {
 	width:100%;
-	height: 46px;
-	background: grey;
-	color: white;
+	height: 55px;
+	background: white;
+	opacity: 0.9;
 	position: fixed;
 	top:0;
 	text-align: right;
+	z-index: 100;
+	
+	
 }
 
-#header-a {
+
+
+#header-a, #header-b, #header-c, #header-d, #header-e {
 	text-decoration: none;
-	color: white;
-	padding: 1%;
-	font-size: 20px;
-	letter-spacing: 5px;
-	line-height: 1.8em;
+	color: black;
+	font-size: 15px;
+	line-height: 4em;
+	position: relative;
+	margin-right: 50px;
+	z-index: 100;
+	
   
 }
-a:hover {
-	background: darkgrey;
-	border: 1px solid grey;
+.navigation a:hover {
+	background: orange;
 }
-.firstpic {
-	
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-		
+/* Søge feltet */
+.search-form {
+	margin-top: 15px;
+	float:right;
+	margin-right: 20px;
+}
+input[type=text] {
+	padding: 7px;
+	border: 1px solid blue;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+button {
+	float: right;
+	background: orange;
+	color: white;
+	border-radius: 0 5px 5px 0;
+	cursor:pointer;
+	height: 30px;
+	width: 60px;
 	
 }
 
-.firstpic {
-	background-image: url("pexels-photo-1061588.jpeg");
-	min-height: 100%;
+/* slideshowet på forsiden */
+img {
+	width: auto;
+	height: 100%;
+    display: block;
+    margin: 0 auto;
+	
 	
 }
-.sweetbot-txt {
+
+		
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    width:auto;
+    height: 100%;
+    padding: 10px;
+	
+	
+    
+}
+ 
+#slideshow > div {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+	
+}
+
+
+
+/*.firstpic {
+	background-image: url("img/photo-homepage4.jpg");
+	min-height: 100%;
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;*/
+	
+	
+	
+
+	
+
+
+
+
+/* sweetbot-txt {
 	position: absolute;
 	top: 50%;
 	width: 100%;
@@ -56,38 +119,60 @@ a:hover {
 	font-size: 27px;
 	letter-spacing: 8px;
 	text-transform: uppercase;
-}
-
-.sweetbot-txt .border {
-	background: grey;
-}
+*/
 
 
 
-#container {
-	border: 1px solid black;
-	width:100%;
+.container {
+	background: #B5B2B0;
+	height: 400px;
+	outline: 1px solid black;
 	
 }
-.projekter {
-	background-color: #CECECE;
+
+.Services, .Projekter, .Om-os, .Kontakt {
+	padding-top: 5px;
+	color: #262626;
+	font-size: 20px;
+	font-family: sans-serif;
+	letter-spacing: 2px;
+}
+
+.Services {
 	text-align: center;
+}
+
+.billede1 {
+ 
+	display: inline-block;
+	width: auto;
+	height: 250px;
+	margin-left: 5.5%;
+	margin-top: 3%;
+}
 	
+
+
+.Projekter {
+	text-align: center;
 }
-.photos {
-    max-width: 200px; 
-    max-height: 200px;
-	position: relative;
+.Om-os {
+	text-align: center;
+}
+.Kontakt {
+	text-align: center;
+}
+
+
 	
-}
-@media(max-width:568px) {
-	.firstpic {
-		background-attachment: scroll;
+
+
+
+	
+
+@media(max-width : 568px ){
 	}
-	#navigation {
-		display: none;
+	.navigation {
+		
 	}
-	.photos {
-		display: none;
-	}
-}
+	
