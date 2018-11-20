@@ -1,8 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en-DK">
 <head>
 <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 <title>sweetbot</title>
 	<link rel="stylesheet" href="styles.css" type="text/css">
 	
@@ -22,104 +23,166 @@
         },  3000);
          
     });
+
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+	// console.log(event.target.id)	
+	if(event.target.id !== 'searchbox'){
+	if(event.target.id === 'search'){
+	document.getElementById("myDropdown").classList.toggle("show");	
+	}
+	}
+	
+}
 </script>
+	
 </head>
 	
 	
 <body>
 <header>
+	
 	<nav class="navigation">
-		
+		<a href="#"> <img src="img/sweetbot.logo2.png" id="sweetbotlogo" alt="Logo"></a>
 		<a href="#" id="header-a">Home</a>
 		<a href="#Services" id="header-b">Services</a>
 		<a href="#Projekter" id="header-c">Projekter</a>
 		<a href="#Om os" id="header-d">Om os</a>
 		<a href="#Kontakt" id="header-e">Kontakt</a>
-	
-	
-	<form class ="search-form">
-	<input type ="text" placeholder ="Search">
-		<button>Søg</button>
-	
-	</form>
 		
+		<div class="dropdown">
+		<button class="dropbtn" id="search"><img src="img/mikroskop" alt="søgeknap" class="search" id="search"></button>
+		<div id="myDropdown" class="dropdown-content">
+			
+		<form class="search-form" id="searchbox">
+			<input id="searchbox" type="text" placeholder="Søg her">
+		<button id="searchbox">Søg</button>
+		</form>
+			
+			
+			
+			</div>
+		</div>
 		</nav>
-	</header>
+		</header>
 
 	
 	<div id="slideshow">
-		<div><img src="img/billede1.jpeg" alt="" /></div>
-		<div><img src="img/photo-homepage3.jpg" alt="" /></div>
-		<div><img src="img/photo-homepage.jpg" alt="" /></div>
-		<div><img src="img/hotbot_logo.jpg" alt="" /></div>
+		<div><img src="img/billede1.jpeg" alt="placeholder1" class="img-slide"></div>
+		<div><img src="img/photo-homepage3.jpg" alt="placeholder2" class="img-slide"></div>
+		<div><img src="img/lets-get-startet.jpg" alt="placeholder3" class="img-slide"></div>
+		<div><img src="img/hotbot_logo.jpg" alt="hotbot logo" class="img-slide"></div>	
+	</div>
+	
+	
+	
+	
+	
 
-		
+	
+	
+		<section class="Services-light" id="Services">
+			
+			
+			<h2>Services</h2>
+			<p id="textlorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus sed nisi reiciendis minima, autem soluta sequi sit! Minus aliquid labore unde aliquam qui quia et ducimus libero, inventore nobis beatae earum, eligendi blanditiis fuga. Mollitia, exercitationem, veniam. Quibusdam natus dolores delectus aperiam assumenda, itaque eligendi id tempora, cupiditate, expedita ipsum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error provident doloribus eum harum. Eos quos quisquam magnam quae reiciendis tempore fugit magni, culpa. Eum reiciendis, consectetur fugiat numquam optio nulla, sunt id, minima iusto consequuntur, alias et distinctio. Porro reprehenderit, vitae ducimus placeat deserunt, qui in ea tempore autem temporibus!</p>
+	
+	</section>
+	<div class="services-img">
 	
 		
-		
-</div>
-	
-	
-	
-	
-	<!--<div class="firstpic">
-	<!-- <div class="sweetbot-txt">
-		<span class="border">
-		Sweetbot.Design
-		</span> 
+		<div class="container-webudvikling">
+			<img src="img/photo-kontak-os.jpg" class="img1" alt="billede af webudvikling">
+			<div class="middlebox">
+				<div class="text2">
+				<h2>Lorem ipsum dolor sit amet.</h2>
+				</div>
+			</div>
 		</div>
-	</div>-->
-
+			
+			
+			<img src="img/security-protection-anti-virus-software-60504.jpeg" class="img2" alt="billede af secrurity">
+			<img src="img/suprme2" alt="supreme logo" class="img3">
+	</div>	
 	
-	<div class="container">
-		<div class="Services"> <section id="Services">Services</section> </div>
-		<img src="img/photo-kontak-os.jpg" alt="programmer" class="billede1">
-		<img src="img/security-protection-anti-virus-software-60504.jpeg" alt="security" class="billede1">
-		<img src="img/hotbot_logo.jpg" alt="hotbot logo" class="billede1">
-	</div>
-	<div class="container">
-		<div class="Projekter"> <section id="Projekter">Projekter</section>  </div>
-	</div>
-	<div class="container">
-		<div class="Om-os"> <section id="Om os">Om os</section>  </div>
-	</div>
+	<section class="Services-light" id="Projekter">
+			
+			<h2>Projekter</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus sed nisi reiciendis minima, autem soluta sequi sit! Minus aliquid labore unde aliquam qui quia et ducimus libero, inventore nobis beatae earum, eligendi blanditiis fuga. Mollitia, exercitationem, veniam. Quibusdam natus dolores delectus aperiam assumenda, itaque eligendi id tempora, cupiditate, expedita ipsum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nobis reprehenderit, odio, ut aut dolorum necessitatibus. Natus autem maiores architecto rem, ratione explicabo nulla libero eius voluptatibus cupiditate dignissimos soluta magni reprehenderit minima voluptatum, numquam rerum nemo beatae dolore laudantium veniam commodi! Et explicabo hic accusamus libero aliquam vel dolorem error ipsam pariatur nihil laboriosam, cum velit eveniet labore quidem laudantium iure soluta accusantium rerum. Enim, aspernatur error doloremque eos assumenda optio repellendus! Aspernatur corporis quisquam, dicta quasi impedit commodi.</p>
+	</section>
 	
-	
-	
-	
-	
-	<!-- kontakt section -->
-	<div class="container">
-		<div class="Kontakt"> <section id="Kontakt">Kontakt</section>  </div>
-		<div class="contact-form">
-  <form action="mailto:Madr1402@hotmail.com" method="post" enctype="text/plain">
-    <div class="txtb">
-      <label>Full Name:</label>
-      <input type="text" name="name" placeholder="Enter Your Name" autofocus required>
-    </div>
-    <div class="txtb">
-      <label>Email:</label>
-      <input type="email" name="email" placeholder="Enter Your Email" autofocus required>
-    </div>
-    <div class="txtb">
-      <label>Phone Number:</label>
-      <input type="text" name="phonenumber" placeholder="Enter Your Phone Number" autofocus required>
-    </div>
-    <div class="txtb">
-      <label>Message:</label>
-      <textarea name="comment" placeholder="Type your message here"></textarea>
-    </div>
-    <div class="submit">
-      <input type="submit" value="Send">
-    </div>
-  </form>
-</div>
-	</div>
+	<div class="flex-container">
+		<div class="pic2">
+		<img src="img/projekter-img/img2.png" alt="placeholder5">
+		</div>
+		
+		<div class="pic3">
+		<img src="img/projekter-img/img3.jpg" alt="placeholder6">
+		</div>
+		<div class="pic4">
+		<img src="img/projekter-img/img4.jpg" alt="placeholder7">
+		</div>
+		<div class="pic5">
+		<img src="img/projekter-img/img5.PNG" alt="placeholder8">
+		</div>
+		<div class="pic6">
+		<img src="img/projekter-img/img6.jpg" alt="placeholder9">
+		</div>
+		<div class="pic7">
+		<img src="img/projekter-img/img7.jpg" alt="placeholder10">
+		</div>
+		</div>
+		
+		
 	
 	
 	
+	
+	<section class="Services-light" id="Om os">
+			
+			<h2>Om os</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus sed nisi reiciendis minima, autem soluta sequi sit! Minus aliquid labore unde aliquam qui quia et ducimus libero, inventore nobis beatae earum, eligendi blanditiis fuga. Mollitia, exercitationem, veniam. Quibusdam natus dolores delectus aperiam assumenda, itaque eligendi id tempora, cupiditate, expedita ipsum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos aliquid sunt officia accusantium, harum laborum nisi doloremque ex. Labore natus, quidem nostrum. Aut doloremque excepturi minus harum hic sapiente, architecto ut similique saepe adipisci aspernatur qui rem enim laborum nam earum, quisquam et! Dignissimos eius hic doloremque tempora corporis, placeat aliquam, assumenda quod sapiente, vel cumque quasi dolor, dicta!</p>
+	</section>
+	
+	<img src="img/team.jpeg" class="team" alt="team billede">
 	
 <!-- contact form -->
+	<footer>
+		
+	<h2 class="kontakt" id="Kontakt">Kontakt</h2>	
+	<div id="contactbox">
+			<div class="footercontact">
+				<h3>
+			<ul>
+				<li>Virksomhed: Sweetbot Design </li> <br>	
+				<li>CEO's: Merete Geldermann | Marc Kluge </li>	<br>
+				<li>Email: mli@cphbusiness.dk| klu@cphbusiness.dk</li>	
+			</ul> 
+				
+				</h3>
+			</div>
+		
+			
+			<div class="footercontact2">
+				<h3>
+			<ul>
+				<li>Facebook</li> <br>	
+				<li>Linkedin</li> <br>
+				<li>Twitter</li>
+			</ul>
+				</h3>
+			</div>
+        </div>
+	</footer>
 	
+
 </body>
 </html>
+
+
+
+
+
+
+

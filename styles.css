@@ -3,67 +3,125 @@
 
 body, html {
 	height: 100%;
-	margin: 0px;
+	margin: 0;
 	font-size: 16px;
 	font-family: "lato", sans-serif;
 	font-weight: 400;
-	border:0px;
+	border:0;
 }
+
 /* navigations baren i toppen */
 .navigation {
 	width:100%;
-	height: 55px;
+	height: 75px;
 	background: white;
 	opacity: 0.9;
 	position: fixed;
 	top:0;
-	text-align: right;
 	z-index: 100;
-	
-	
+	text-align: right;
 }
 
 
 
 #header-a, #header-b, #header-c, #header-d, #header-e {
 	text-decoration: none;
-	color: black;
+	color: grey;
 	font-size: 15px;
-	line-height: 4em;
+	line-height: 5em;
 	position: relative;
 	margin-right: 50px;
 	z-index: 100;
 	
   
 }
-.navigation a:hover {
-	background: orange;
+ #header-a:hover, #header-b:hover, #header-c:hover, #header-d:hover, #header-e:hover {
+	color: black;
+}
+#sweetbotlogo{
+	float: left;
+	height: 100px;
+	width: auto;
+	margin-top: -12px;
+	margin-left: -35px;
+}
+
+.dropbtn {
+	background-color: none;
+	border: none;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: none;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+	
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+	top:60px;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+
+
+.search {
+	width: auto;
+	height: 38px;
+	float: right;
+	margin-right:5px;
 }
 /* Søge feltet */
 .search-form {
-	margin-top: 15px;
+	margin-top: 20px;
 	float:right;
 	margin-right: 20px;
 }
 input[type=text] {
 	padding: 7px;
-	border: 1px solid blue;
+	outline: .5px solid blue;
 	font-size: 16px;
 	font-family: sans-serif;
 }
 button {
 	float: right;
-	background: orange;
-	color: white;
-	border-radius: 0 5px 5px 0;
+	background: #ddd;
+	color: black;
+	border: none;
+	border-radius: 3px;
 	cursor:pointer;
-	height: 30px;
+	height: 36px;
 	width: 60px;
+	outline: 1px solid grey;
 	
 }
 
+
 /* slideshowet på forsiden */
-img {
+.img-slide {
 	width: auto;
 	height: 100%;
     display: block;
@@ -81,6 +139,7 @@ img {
     padding: 10px;
 	
 	
+	
     
 }
  
@@ -93,86 +152,199 @@ img {
 	
 }
 
-
-
-/*.firstpic {
-	background-image: url("img/photo-homepage4.jpg");
-	min-height: 100%;
-	background-position: center;
-	background-size: 100%;
-	background-repeat: no-repeat;*/
-	
-	
-	
-
-	
-
-
-
-
-/* sweetbot-txt {
-	position: absolute;
-	top: 50%;
-	width: 100%;
-	text-align: center;
-	color: white;
-	font-size: 27px;
-	letter-spacing: 8px;
-	text-transform: uppercase;
-*/
-
-
-
-.container {
-	background: #B5B2B0;
-	height: 400px;
-	outline: 1px solid black;
-	
+.Services-light {
+	background-color: #B5B2B0;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	opacity: 0.5;
 }
-
-.Services, .Projekter, .Om-os, .Kontakt {
-	padding-top: 5px;
-	color: #262626;
-	font-size: 20px;
-	font-family: sans-serif;
-	letter-spacing: 2px;
-}
-
-.Services {
+h2 {
 	text-align: center;
 }
+#textlorem {
+	text-align: left;
+	margin-left: 1%;
+}
 
-.billede1 {
- 
-	display: inline-block;
+/*Her styles der på billederne i undersektionerne*/
+
+	.services-img {
+ 	display: flex;
+	width: 33%;
+	height: 200px;
+	background-repeat: no-repeat;
+	margin-left: 2%;
+	padding-top: 5%;
+	padding-bottom: 10%;
+		
+
+}
+
+.img1, .img2 {
 	width: auto;
-	height: 250px;
-	margin-left: 5.5%;
-	margin-top: 3%;
+	height: 270px;
+    display: block;
+    
 }
+
+.img1 {
 	
-
-
-.Projekter {
-	text-align: center;
-}
-.Om-os {
-	text-align: center;
-}
-.Kontakt {
-	text-align: center;
-}
-
-
+	opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
 	
+}
+.img3 {
+	width:auto;
+	height:270px;
+}
+.middlebox {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+	-ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 
+}
 
+.container-webudvikling:hover .img1 {
+  opacity: 0.3;
+}
+.container-webudvikling:hover .middle {
+  opacity: 1;
+}
+.text2 {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 8px;
+}
 
+.img2 {
+	padding-left: 25%;
 	
+}
+.img3 {
+	padding-left: 25%;
+}
 
-@media(max-width : 568px ){
-	}
+.kontakt {
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+
+
+#contactbox {
+	margin-left: 15%;
+}
+.footercontact {
+	display: inline-block;
+}
+
+.footercontact2 {
+	display: inline-block;
+	margin-left: 27%;
+}
+
+ul {
+	
+list-style-type: none;
+}
+
+
+
+.flex-container {
+	
+	display: flex;
+	flex-wrap: wrap;
+}
+.pic2 img, .pic3 img, .pic4 img, .pic5 img, .pic6 img, .pic7 img {
+	width:auto;
+	height:300px;
+	position: relative;
+	padding: 30px;
+}
+
+/* overlay*/
+.flex-container div img {
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+	transition: transform 2s;
+}
+
+.flex-container div img:hover {
+	transform: scale(1.1);
+}
+
+
+
+
+.team {
+	width: auto;
+	height: 400px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	background-color: #B5B2B0;
+	border-left: solid black;
+	padding-top: 2px;
+	
+}
+
+
+
+
+/*
+.flex-container div img:hover {
+	-webkit-filter:grayscale(0%);
+	filter: grayscale(0%);
+	transform: 10;
+}
+.flex-container div {
+	z-index: 10;
+}
+
+.flex-container div:hover {
+	position: relative;
+	z-index: 10000 !important;
+}
+
+*/
+@media only screen and (max-width : 568px ){
+	
 	.navigation {
+		display: none;
+	}
+	
+	#slideshow {
+		display: none;
 		
 	}
+
+}
+
+
+
+	
 	
