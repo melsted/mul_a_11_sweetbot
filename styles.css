@@ -2,349 +2,330 @@
 /* CSS Document */
 
 body, html {
-	height: 100%;
-	margin: 0;
-	font-size: 16px;
-	font-family: "lato", sans-serif;
-	font-weight: 400;
-	border:0;
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    border: 0;
 }
-
+/* ------------------- - --------------- */
 /* navigations baren i toppen */
 .navigation {
-	width:100%;
-	height: 75px;
-	background: white;
-	opacity: 0.9;
-	position: fixed;
-	top:0;
-	z-index: 100;
-	text-align: right;
+    width: 100%;
+    height: 75px;
+    background: white;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    text-align: right;
 }
-
-
-
 #header-a, #header-b, #header-c, #header-d, #header-e {
-	text-decoration: none;
-	color: grey;
-	font-size: 15px;
-	line-height: 5em;
-	position: relative;
-	margin-right: 50px;
-	z-index: 100;
-	
-  
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
+    line-height: 5em;
+    position: relative;
+    margin-right: 50px;
+    z-index: 100;
 }
- #header-a:hover, #header-b:hover, #header-c:hover, #header-d:hover, #header-e:hover {
-	color: black;
+#header-a:hover, #header-b:hover, #header-c:hover, #header-d:hover, #header-e:hover {
+    color: black;
 }
-#sweetbotlogo{
-	float: left;
-	height: 100px;
-	width: auto;
-	margin-top: -12px;
-	margin-left: -35px;
+#sweetbotlogo {
+    float: left;
+    height: 75px;
+    width: auto;
+    margin-top: 0;
+    margin-left: 0;
 }
-
+/* ---------- - ------------------- */
+/* drop  down menu i søge feltet */
 .dropbtn {
-	background-color: none;
-	border: none;
-	margin-top: 20px;
-	margin-right: 10px;
+    background-color: white;
+    border: none;
+    margin-top: 20px;
+    margin-right: 10px;
 }
 .dropbtn:hover, .dropbtn:focus {
     background-color: none;
 }
-
 .dropdown {
     float: right;
     position: relative;
     display: inline-block;
-	
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
-	top:60px;
+    top: 60px;
     min-width: 160px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     right: 0;
     z-index: 1;
 }
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-
-
-
-
+.dropdown a:hover {
+    background-color: #ddd;
+}
+.show {
+    display: block;
+}
+/* ------ -- -- - -- --- ---  */
+/* Måske er det her søgefunktionens styling */
 .search {
-	width: auto;
-	height: 38px;
-	float: right;
-	margin-right:5px;
+    width: auto;
+    height: 38px;
+    float: right;
+    margin-right: 5px;
 }
 /* Søge feltet */
 .search-form {
-	margin-top: 20px;
-	float:right;
-	margin-right: 20px;
+    margin: 2px;
+    float: right;
+    
+	    display: inline-flex;
 }
 input[type=text] {
-	padding: 7px;
-	outline: .5px solid blue;
-	font-size: 16px;
-	font-family: sans-serif;
+    padding: 7px;
+    outline: .5px solid gery;
+    font-size: 16px;
+    font-family: sans-serif;
 }
 button {
-	float: right;
-	background: #ddd;
-	color: black;
-	border: none;
-	border-radius: 3px;
-	cursor:pointer;
-	height: 36px;
-	width: 60px;
-	outline: 1px solid grey;
-	
+    float: right;
+   
+    color: black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 36px;
+    width: 60px;
+    outline: 1px solid grey;
+	margin-right: 8px;
 }
-
-
+/* ----------- ------------ */
 /* slideshowet på forsiden */
 .img-slide {
-	width: auto;
-	height: 100%;
+    width: auto;
+    height: 100%;
     display: block;
     margin: 0 auto;
-	
-	
 }
-
-		
 #slideshow {
     margin: 50px auto;
     position: relative;
-    width:auto;
+    width: auto;
     height: 100%;
     padding: 10px;
-	
-	
-	
-    
 }
- 
 #slideshow > div {
     position: absolute;
     top: 5px;
     left: 5px;
     right: 5px;
     bottom: 5px;
-	
 }
-
+/* sektionerne services, om os & kontakt */
 .Services-light {
-	background-color: #B5B2B0;
-	padding-top: 2.5%;
-	padding-bottom: 2.5%;
-	opacity: 0.5;
+    background-color: #B5B2B0;
+    padding-top: 1%;
+    padding-bottom: 2.5%;
+    opacity: 0.8;
 }
 h2 {
-	text-align: center;
+    text-align: center;
 }
 #textlorem {
-	text-align: left;
-	margin-left: 1%;
+    text-align: left;
+    margin-left: 1%;
+    column-count: 3;
 }
-
+#textlorem1 {
+    column-count: 2;
+}
 /*Her styles der på billederne i undersektionerne*/
 
-	.services-img {
- 	display: flex;
-	width: 33%;
-	height: 200px;
-	background-repeat: no-repeat;
-	margin-left: 2%;
-	padding-top: 5%;
-	padding-bottom: 10%;
-		
-
+.services-img {
+    display: flex;
+    width: 33%;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-left: 2%;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
-
 .img1, .img2 {
-	width: auto;
-	height: 270px;
+    width: auto;
+    height: 270px;
     display: block;
-    
 }
-
+/* Overlay til webudvk. security, supreme */
 .img1 {
-	
-	opacity: 1;
-  display: block;
-  transition: .5s ease;
-  backface-visibility: hidden;
-	
-}
-.img3 {
-	width:auto;
-	height:270px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 .middlebox {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-	-ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 199%;
+    left: 23%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-
-.container-webudvikling:hover .img1 {
-  opacity: 0.3;
-}
-.container-webudvikling:hover .middle {
-  opacity: 1;
+ /*.container-webudvikling:hover .img1 {
+    opacity: 0.5;
+} */
+.container-webudvikling .text2:hover {
+    text-decoration: underline;
 }
 .text2 {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 8px;
+    background: #C9DB50;
+    color: white;
+    font-size: 20px;
 }
-
-.img2 {
-	padding-left: 25%;
-	
-}
+/* security & supreme billeder  */
 .img3 {
-	padding-left: 25%;
+    width: auto;
+    height: 270px;
+    padding-left: 25%;
 }
-
-.kontakt {
-	text-align: center;
-	padding-bottom: 2%;
+.img2 {
+    padding-left: 25%;
 }
-
-
-
-#contactbox {
-	margin-left: 15%;
-}
-.footercontact {
-	display: inline-block;
-}
-
-.footercontact2 {
-	display: inline-block;
-	margin-left: 27%;
-}
-
-ul {
-	
-list-style-type: none;
-}
-
-
-
+/* Projekter (billede sektion) */
 .flex-container {
-	
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 .pic2 img, .pic3 img, .pic4 img, .pic5 img, .pic6 img, .pic7 img {
-	width:auto;
-	height:300px;
-	position: relative;
-	padding: 30px;
+    width: auto;
+    height: 300px;
+    position: relative;
+    padding: 30px;
 }
-
 /* overlay*/
 .flex-container div img {
-	position: relative;
-	overflow: hidden;
-	max-width: 100%;
-	transition: transform 2s;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    transition: transform 2s;
 }
-
 .flex-container div img:hover {
-	transform: scale(1.1);
+    transform: scale(1.1);
 }
-
-
-
-
+/* Kontakt sektion */
+.kontakt {
+    text-align: center;
+    padding-bottom: 2%;
+}
+#contactbox {
+    margin-left: 15%;
+}
+ul {
+    list-style-type: none;
+}
 .team {
-	width: auto;
-	height: 400px;
-
+    width: auto;
+    height: 420px;
+    margin-left: 30%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
-	background-color: #B5B2B0;
-	border-left: solid black;
-	padding-top: 2px;
-	
+    background-color: #B5B2B0;
+    border-left: solid black;
+    padding-top: 2px;
+}
+.footercontact {
+    display: inline-block;
+    margin-bottom: 5%;
+}
+.footercontact2 {
+    display: inline-block;
+    margin-left: 27%;
+}
+
+.facebook {
+	height: 70px;
+	width: auto;
+}
+.Linkedin {
+	height: 70px;
+	width: auto;
+}
+.Instagram {
+	height: 70px;
+	width: auto;
+}
+.Twitter {
+	height: 70px;
+	width: auto;
 }
 
 
 
 
-/*
-.flex-container div img:hover {
-	-webkit-filter:grayscale(0%);
-	filter: grayscale(0%);
-	transform: 10;
-}
-.flex-container div {
-	z-index: 10;
-}
 
-.flex-container div:hover {
-	position: relative;
-	z-index: 10000 !important;
+@media only screen and (max-width : 568px ) {
+.navigation {
+    display: ;
 }
-
-*/
-@media only screen and (max-width : 568px ){
-	
-	.navigation {
-		display: none;
+#slideshow {
+    display: none;
+}
+	.services-img {
+		display:block;
 	}
-	
-	#slideshow {
-		display: none;
+	.team {
+		width: auto;
+		height: 250px;
+		margin-left: .5%;
+	}
+	.img1 {
+		margin-left: -8%;
+		margin-top: -15%;
+		padding: 0;
+	}
+	.img2 {
+		margin-left: -30%;
+		padding: 0;
 		
 	}
-
+	.img3 {
+		margin-left: -8%;
+		padding: 0;
+	}
+	#Projekter {
+		margin-top: 147.6%;
+	}
+	
+	.pic2, .pic3, .pic4, .pic5, .pic6, .pic7 {
+		height: 200px;
+		width: 100%;
+		padding: 0;
+		margin-bottom: 30%;
+		margin-left: -8%;
+	}
+	
+	#Om-os{
+		padding: 0;
+	}
+	
 }
 
 
 
-	
-	
+
+
+
+
+
