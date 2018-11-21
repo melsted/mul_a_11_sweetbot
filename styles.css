@@ -173,27 +173,49 @@ h2 {
     transition: .5s ease;
     backface-visibility: hidden;
 }
-.middlebox {
-    transition: .5s ease;
-    opacity: 1;
+   
+.webudviklingoverlay {
+	width: auto;
+}
+
+/* overlay til webudvikling billede */
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text{
     position: absolute;
-    top: 199%;
-    left: 23%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
- /*.container-webudvikling:hover .img1 {
-    opacity: 0.5;
-} */
-.container-webudvikling .text2:hover {
-    text-decoration: underline;
-}
-.text2 {
-    background: #C9DB50;
+    top: 50%;
+    left: 52%;
+    font-size: 50px;
     color: white;
-    font-size: 20px;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
 }
+.webudviklingoverlay{
+	position: absolute;
+	margin-top: 9%;
+	
+	background: #C9DB50;
+	font-size: 20px;
+	color: white;
+	width:26.6%;
+	border: none;
+	
+	
+}
+
 /* security & supreme billeder  */
 .img3 {
     width: auto;
@@ -271,6 +293,10 @@ footer {
 	width: auto;
 }
 
+.klassisk-ikon {
+	height: 70px;
+	width: auto;
+}
 
 
 

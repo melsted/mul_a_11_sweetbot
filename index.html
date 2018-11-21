@@ -23,7 +23,7 @@
     });
 
 
-// Close the dropdown if the user clicks outside of it
+// Åbner søge menuen når man trykker på kassen & billedet, og lukker menuen når man trykker vilkårigt sted.
 window.onclick = function(event) {
 	// console.log(event.target.id)	
 	if(event.target.id !== 'searchbox'){
@@ -32,6 +32,23 @@ window.onclick = function(event) {
 	}
 	}
 	
+}
+
+
+
+
+
+
+
+
+</script>
+	<script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
 }
 </script>
 </head>
@@ -63,14 +80,19 @@ window.onclick = function(event) {
   <p id="textlorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus sed nisi reiciendis minima, autem soluta sequi sit! Minus aliquid labore unde aliquam qui quia et ducimus libero, inventore nobis beatae earum, eligendi blanditiis fuga. Mollitia, exercitationem, veniam. Quibusdam natus dolores delectus aperiam assumenda, itaque eligendi id tempora, cupiditate, expedita ipsum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error provident doloribus eum harum. Eos quos quisquam magnam quae reiciendis tempore fugit magni, culpa. Eum reiciendis, consectetur fugiat numquam optio nulla, sunt id, minima iusto consequuntur, alias et distinctio. Porro reprehenderit, vitae ducimus placeat deserunt, qui in ea tempore autem temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid laudantium vel consequatur ab nobis. Iusto iste corporis placeat hic quae aut tenetur, ipsa minus repellat possimus in molestiae sed repudiandae nulla molestias provident illum ullam, ad voluptatum natus. Eveniet est, asperiores, porro modi magni error aliquid rerum tenetur quam quidem vel hic obcaecati! Sapiente, explicabo, architecto. Consectetur dolorum qui excepturi magni. Earum dicta consequatur sed, praesentium, quia alias iusto repudiandae eum dolorem eaque optio, impedit aliquid veniam accusantium assumenda a neque temporibus enim nemo perspiciatis est magni maxime? Eum sunt nostrum, recusandae. Laboriosam tenetur, eum sed, impedit quas ipsum quis.</p>
 </section>
 <div class="services-img">
-  <div class="container-webudvikling"> <img src="img/photo-kontak-os.jpg" class="img1" alt="billede af webudvikling">
-    <div class="middlebox">
-      <div class="text2">
-        <h2>Webudvikling</h2>
-      </div>
-    </div>
-  </div>
-  <img src="img/security-protection-anti-virus-software-60504.jpeg" class="img2" alt="billede af secrurity"> <img src="img/supremerød.jpg" alt="supreme logo" class="img3"> </div>
+	<div class="containerweb">
+			<div id="overlay" onclick="off()">
+  				<div id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates sit eveniet, odit necessitatibus blanditiis fugiat delectus pariatur eaque quo dignissimos?</div>
+			</div>
+   			<div>
+				<button class="webudviklingoverlay" onclick="on()">Webudvikling</button>
+				<img src="img/photo-kontak-os.jpg" class="img1" alt="billede af webudvikling">
+	   			  
+   			</div>
+  		</div>
+ 			<img src="img/security-protection-anti-virus-software-60504.jpeg" class="img2" alt="billede af secrurity"> 
+			<img src="img/supremerød.jpg" alt="supreme logo" class="img3">
+</div> 
 <section class="Services-light" id="Projekter">
   <h2>Projekter</h2>
   <p id="textlorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus sed nisi reiciendis minima, autem soluta sequi sit! Minus aliquid labore unde aliquam qui quia et ducimus libero, inventore nobis beatae earum, eligendi blanditiis fuga. Mollitia, exercitationem, veniam. Quibusdam natus dolores delectus aperiam assumenda, itaque eligendi id tempora, cupiditate, expedita ipsum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nobis reprehenderit, odio, ut aut dolorum necessitatibus. Natus autem maiores architecto rem, ratione explicabo nulla libero eius voluptatibus cupiditate dignissimos soluta magni reprehenderit minima voluptatum, numquam rerum nemo beatae dolore laudantium veniam commodi! Et explicabo hic accusamus libero aliquam vel dolorem error ipsam pariatur nihil laboriosam, cum velit eveniet labore quidem laudantium iure soluta accusantium rerum. Enim, aspernatur error doloremque eos assumenda optio repellendus! Aspernatur corporis quisquam, dicta quasi impedit commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum harum similique cumque doloremque quisquam, quibusdam itaque aut vero quia minus nostrum accusamus enim maiores fugit culpa, aperiam? Odio quae blanditiis tempore neque libero numquam voluptas, officiis vel laborum eaque temporibus esse facere enim commodi corporis nam animi mollitia nisi a quidem perferendis doloremque autem est? Voluptate quas aut beatae illo, consectetur. Eveniet voluptates, architecto doloribus animi, repellat voluptatem ipsam eum nemo consequuntur debitis iure. Quidem adipisci voluptatum debitis assumenda quae totam delectus fugiat temporibus suscipit iusto dolorem magni, eos explicabo saepe dolores obcaecati qui modi nemo deleniti incidunt hic aliquam.</p>
@@ -83,10 +105,14 @@ window.onclick = function(event) {
   <div class="pic6"> <img src="img/projekter-img/img6.jpg" alt="placeholder9"> </div>
   <div class="pic7"> <img src="img/projekter-img/img7.jpg" alt="placeholder10"> </div>
 </div>
+	
+
+
 <section class="Services-light" id="Om-os">
   <h2>Om os</h2>
   <p id="textlorem1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, ab tempore quam illo voluptas perferendis cumque, officia unde sunt, quia, quidem tempora quibusdam facilis aut quis incidunt fugit facere. Non facere doloremque animi numquam alias quas odio accusantium dolorem reiciendis tempore. Rerum ipsam aliquam dolore tempore quisquam corrupti reprehenderit natus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus sed nisi reiciendis minima, autem soluta sequi sit! Minus aliquid labore unde aliquam qui quia et ducimus libero, inventore nobis beatae earum, eligendi blanditiis fuga. Mollitia, exercitationem, veniam. Quibusdam natus dolores delectus aperiam assumenda, itaque eligendi id tempora, cupiditate, expedita ipsum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos aliquid sunt officia accusantium, harum laborum nisi doloremque ex. Labore natus, quidem nostrum. Aut doloremque excepturi minus harum hic sapiente, architecto ut similique saepe adipisci aspernatur qui rem enim laborum nam earum, quisquam et! Dignissimos eius hic doloremque tempora corporis, placeat aliquam, assumenda quod sapiente, vel cumque quasi dolor, dicta!</p>
 </section>
+
 <img src="img/team.jpeg" class="team" alt="team billede"> 
 
 <!-- contact form -->
@@ -97,13 +123,13 @@ window.onclick = function(event) {
     <div class="footercontact">
       <p>
       <ul>
-        <li>Virksomhed: Sweetbot Design </li>
-        <br>
-        <li>CEO's: Merete Geldermann | Marc Kluge </li>
-        <br>
-        <li>Email: mli@cphbusiness.dk| klu@cphbusiness.dk</li>
-        <br>
-        <li>Skole Adresse: Nørgaardsvej 30, 2800 Kgs. Lyngby</li>
+        <li> <img class="klassisk-ikon" src="img/virksomhed-ikon.png"> Virksomhed: Sweetbot Design </li>
+        
+        <li> <img class="klassisk-ikon" src="img/ceo-ikon.png"> CEO's: Merete Geldermann | Marc Kluge </li>
+      
+        <li> <img class="klassisk-ikon" src="img/email-ikon.png"> Email: mli@cphbusiness.dk| klu@cphbusiness.dk</li>
+       
+        <li> <img class="klassisk-ikon" src="img/adresse-ikon.png"> Skole Adresse: Nørgaardsvej 30, 2800 Kgs. Lyngby</li>
       </ul>
       </p>
     </div>
