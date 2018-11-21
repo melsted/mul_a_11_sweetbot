@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>burgermenu</title>
+<link href="burgermenu.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick= function(event) {
+  if (!event.target.matches('.dropdown-button')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>	
+	
+</head>
+
+<body>
+	
+	<!--Burgermenu-->
+<div class="dropdown">
+  <img src="burgermenuikon.png" width="50" height="30" alt="burgermenu" onclick="myFunction()" class="dropdown-button"/>
+				<!--navigation-->
+			<div id="myDropdown" class="dropdown-content">
+				<a href="#" class="">Home</a>
+				<a href="#Services" class="">Services</a>
+				<a href="#Projekter" class="">Projekter</a>
+				<a href="#Om os" class="">Om os</a>
+				<a href="#Kontakt" class="">Kontakt</a>
+		</div>
+	</div>
+	
+</body>
+</html>
