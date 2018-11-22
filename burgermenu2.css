@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Burgermenu*/
+#burgermenu{
+	display:none;
+}
+.burger-button{
+	background-color: white;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+  	border: 0;
+    cursor: pointer;
+}
+.burgerdown{
+	position: relative;
+    display: block;
+	float: right;
+	color: #B5B2B0;
+}
+.burger-content{
+	display: none;
+    position: inherit;
+    background-color: #ddd;
+    min-width: 10%;
+    box-shadow: 0px 8px 8px 0px rgba(147,147,147,0.05);
+    z-index: 1;
+}
+.burger-content a{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;  
+}
+.burger-content a:hover{
+	Background-color: #B5B2B0; 
+}
+.burgerdown:hover .burger-content{
+	display: block;
+}
+.burgerdown:hover .burger-button{
+	background-color: none;
+	position: relative;
+}
+/*----------------------------*/

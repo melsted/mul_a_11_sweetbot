@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+.img-merete{
+	width: 20%;
+	height: 30%;
+	display: block;
+}
+.img-marc{
+	width: 20%;
+	height: 30%;
+	display: block;
+	margin-top: 5%;
+}
+.ceos{
+	width: 50%;
+	height: auto;
+	display: inline-block;
+}
+
+.lorem1{
+	width: 20%;
+	height: 30%;
+	display: block;
+}
+.lorem2{
+	width: 20%;
+	height: 30%;
+	margin-top: 5%;
+	display: block;
+}
+.ceotext{
+	width: 50%;
+	height: auto;
+	display: inline-block;
+}
+
+.ceotext{
+	width: 100%;
+}
