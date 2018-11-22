@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+.footercontact {
+    display: inline-block;
+    margin-bottom: 5%;
+	width: 42%;
+	border: 1px solid black;
+	margin-left: 20%;
+}
+.klassisk-ikon {
+	height: 60px;
+	width: auto;
+	position: relative;
+	float: left;
+	clear: left;
+}
+.ikontext{
+	position: relative;
+	float: right;
+	clear: right;
+}
+.ia{
+	margin-right: 30%
+}
+.ib{
+	margin-right: 12.5%
+}
+.id{
+	margin-right: 5.5%
+}
